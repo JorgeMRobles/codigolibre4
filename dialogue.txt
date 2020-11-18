@@ -1,0 +1,3 @@
+What would you like to do?
+	>> Introduce '1' to continue running away into the current path of the forest
+	>> Introduce '2' to run away into a path surrounded by darkness 

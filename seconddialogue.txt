@@ -1,0 +1,49 @@
+#waterfalls1#
+!!!----------------------Waterfalls----------------------!!!
+Soldier: Stop
+Soldier: Dammed murder...
+!!!----------------------Forest------------------------!!!
+Soldier: You will not reach the exit
+Soldier: It's not first time one of you has tried to run away using that path before 
+You fall over 
+and continue
+It seems like the persecutors have lost your track
+You can rest
+In front of you there's a cave, do you want to go there?
+	>> Introduce '1' to hide into the cave
+	>> Introduce '2' to ignore it
+#cave1#
+!!!------------------------Cave------------------------!!!
+Wolf: Grrr...
+It's very threatening 
+It moves closer to you
+Wolf: GRRRRR 
+Suddenly a pack of wolves surround you
+Do you use a spell?
+	>> Introduce '1' to use it
+	>> Introduce '2' to don't attack
+#cave1a#
+The pack approaches you and breaks you into pieces
+#cave1b#
+You raise your hands as a sign of surrender
+You close your eyes and keep silence 
+...
+...
+...
+You open them 
+Naked and dirty men and women treat you with respect
+#object1#
+Werewolf: I give you this special object. Think of it like an investment
+Werewolf: Com'on, it doesn't hurt. Try to use it
+Suspiciously, you watch the pack
+#object2#
+Werewolf: Now, show us your strength. 
+Com'on! Fight against me! 
+#forest1b#
+You have been murdered
+A spear pierced you on the back 
+Soldier: Finally I found you, foolish magician
+Exactly, the creator was here
+Wrong entry
+You only can choose '1' or '2', I'm afraid
+Something is near...
