@@ -81,31 +81,31 @@ void Commands::executecommand()
     switch (command_int_saved)
     {   //compares command introduced with its int and executes it
         case 0:
-            cout<<"You have chosen command_help"<<endl;
+            cout << "You have chosen command_help" << endl;
             executehelp();
             break;
         case 1:
-            cout<<"You have chosen command_health"<<endl;
+            cout << "You have chosen command_health" << endl;
             executehealth();
             break;
         case 2:
-            cout<<"You have chosen command_energy"<<endl;
+            cout << "You have chosen command_energy" << endl;
             executeenergy();
             break;
         case 3:
-            cout<<"You have chosen command_attack"<<endl;
+            cout << "You have chosen command_attack" << endl;
             executeattack();
             break;
         case 4:
-            cout<<"You have chosen command_stats"<<endl;
+            cout << "You have chosen command_stats" << endl;
             executestats();
             break;
         case 5:
-            cout<<"You have chosen command_null"<<endl;
+            cout << "You have chosen command_null" << endl;
             executenull();
             break;
         default:
-            cout<<"Wrong command"<<endl;
+            cout << "Wrong command" << endl;
     }
 }
 //

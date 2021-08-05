@@ -16,7 +16,7 @@ class Characters
 {
 public:
     Characters(); //call to constructor
-    Characters(string n, int h, int fo, int po);
+    Characters(string name, int health, int force, int power);
 
     string setname();
     int sethealth();
@@ -29,12 +29,12 @@ protected:
     int _power;
 
 };
-Characters::Characters (string n, int h, int fo, int po)
+Characters::Characters (string name, int health, int force, int power)
 {
-    _name = n;
-    _health= h;
-    _force= fo;
-    _power= po;
+    _name = name;
+    _health = health;
+    _force = force;
+    _power = power;
 }
 
 string Characters::setname() 
@@ -60,13 +60,14 @@ Characters vampire ("Vampire", 1000, 30, 33);
 Characters finalboss ("Final Shadow", 40000, 100, 100);
 
 //------------Objects-----------------------
-class Objects{
+class Objects
+{
 public:
     Objects();
-    Objects(string n, string descr);
+    Objects(string name, string description);
     string nameobject();
     string describeobject();
-    void changequantity(int q);
+    void changequantity(int quantity);
     int getquantity();
 
 protected:
@@ -74,10 +75,10 @@ protected:
     int _quantity;
 };
 
-Objects::Objects(string n, string descr)
+Objects::Objects(string name, string description)
 {
-    _name = n;
-    _description = descr;
+    _name = name;
+    _description = description;
 }
 
 string Objects::nameobject()
@@ -88,9 +89,9 @@ string Objects::describeobject()
 {
     return _description;
 }
-void Objects::changequantity(int q) 
+void Objects::changequantity(int quantity) 
 {
-    _quantity = q;
+    _quantity = quantity;
 }
 int Objects::getquantity()
 {

@@ -8,7 +8,7 @@
 class Stats{
 public:
     Stats();
-    Stats(int s, int an, int en, int at);
+    Stats(int health, int mood, int energy, int attack);
 
     int gethealth();
     int getmood();
@@ -20,10 +20,10 @@ public:
     int energy = getenergy();
     int attack = getattack();
 
-    void changehealth(int s);
-    void changemood(int an);
-    void changeenergy(int en);
-    void changeattack(int at);
+    void changehealth(int health);
+    void changemood(int mood);
+    void changeenergy(int energy);
+    void changeattack(int attack);
 
 protected:
     int _health;
@@ -33,11 +33,11 @@ protected:
 
 };
 
-Stats::Stats (int s, int an, int en, int at){
-    _health = s;
-    _mood = an;
-    _energy = en;
-    _attack = at;
+Stats::Stats (int health, int mood, int energy, int attack){
+    _health = health;
+    _mood = mood;
+    _energy = energy;
+    _attack = attack;
 }
 
 int Stats::gethealth() 
@@ -59,20 +59,20 @@ int Stats::getattack()
 
 Stats player_stats (100, 5, 10, 35);
 
-void Stats::changehealth(int s) 
+void Stats::changehealth(int health)
 {
-    _health = s;
+    _health = health;
 }
-void Stats::changemood(int an) 
+void Stats::changemood(int mood)
 {
-    _mood = an;
+    _mood = mood;
 }
-void Stats::changeenergy(int en) 
+void Stats::changeenergy(int mood)
 {
-    _energy = en;
+    _mood = mood;
 }
-void Stats::changeattack(int at) 
+void Stats::changeattack(int attack)
 {
-    _attack = at;
+    _attack = attack;
 }
 #endif //UNTITLED_STATSVALUES_H

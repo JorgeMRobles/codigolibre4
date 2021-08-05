@@ -38,6 +38,10 @@ class Dialogue
 
 void Dialogue::setname()
 {
+    //delete the possible previous content
+    savename.open("registered.txt", ios::out | ios::trunc);
+    savename.close();
+
     char name[40];
     savename.open("registered.txt", ios::app);
     if (savename.is_open())
@@ -55,9 +59,9 @@ void Dialogue::setname()
         savename.close();
     }
     else
-        {
+    {
         cout << "Sorry. Nothing found" << endl;
-        }
+    }
 }
 
 void Dialogue::readfile()
@@ -79,7 +83,8 @@ void Dialogue::readfile()
         }
 }
 
-string Dialogue::readModifiable_name() {
+string Dialogue::readModifiable_name() 
+{
     string line;
     filename_reading.open("registered.txt", ios::in);
     if (filename_reading.is_open())
@@ -260,7 +265,8 @@ void Dialogue::interpretpath3() //between attack and don't attack option
     file_in.close();
 }
 
-void Dialogue::battlebegins(){ //when first battle begins
+void Dialogue::battlebegins()
+{ //when first battle begins
     cout << "Something gets close to you..." << endl;
     cin.ignore();
 }

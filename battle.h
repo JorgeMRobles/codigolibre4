@@ -15,8 +15,8 @@ using namespace std;
 /**********************************************************/
 //battle system
 class MotherBattle
-        {
-        protected:
+{
+protected:
         int turn = 0;
         bool enemyturn = true;
         string enemyname = basicenemy.setname();
@@ -29,11 +29,11 @@ class MotherBattle
         int healthplayer_beginning = player_stats.gethealth();
         int healthplayer = player_stats.gethealth();
         int playerenergy = player_stats.getenergy();
-        public:
+public:
         void showtext();
         void attack();
         void manejandoturn();
-        };
+};
 
 void MotherBattle::showtext()
 {
@@ -134,22 +134,22 @@ void MotherBattle::manejandoturn()
 
 //battle with basic enemy
 class battle : public MotherBattle
-        {    
-        };
+{    
+};
 
 //battle with werewolf
 class battle2 : public MotherBattle
-        {
-        public:
-            void changevalues();
-            int changevalue_turn();
-            bool changevalue_enemyturn();
-            int changevalue_enemyatk();
-            int changevalue_enemyhealth_beginning();
-            int changevalue_enemyhealth();
-            int changevalue_enemyenergy();
-            string changevalue_name();
-        };
+ {
+ public:
+     void changevalues();
+     int changevalue_turn();
+     bool changevalue_enemyturn();
+     int changevalue_enemyatk();
+     int changevalue_enemyhealth_beginning();
+     int changevalue_enemyhealth();
+     int changevalue_enemyenergy();
+     string changevalue_name();
+};
 
 void battle2::changevalues()
 {
