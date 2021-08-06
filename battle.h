@@ -32,7 +32,7 @@ protected:
 public:
         void showtext();
         void attack();
-        void manejandoturn();
+        void managingturn();
 };
 
 void MotherBattle::showtext()
@@ -45,7 +45,7 @@ void MotherBattle::showtext()
 
 void MotherBattle::attack() {   //automatic, while enemyhealth>0 and player is alive
     while (enemyhealth>0 && healthplayer>0){
-        manejandoturn();   //turn of who and what happens in each one
+        managingturn();   //turn of who and what happens in each one
     }
     if (enemyhealth <= 0) { //go out of the battle
         enemyhealth = 0;
@@ -72,7 +72,7 @@ void MotherBattle::attack() {   //automatic, while enemyhealth>0 and player is a
     }
 }
 
-void MotherBattle::manejandoturn()
+void MotherBattle::managingturn()
 {
     turn++;
     cout << "Turn " << turn << endl;
